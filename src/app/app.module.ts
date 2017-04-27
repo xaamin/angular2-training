@@ -9,7 +9,8 @@ import { OrganizationComponent } from './pages/organization/organization.compone
 import { UsersComponent } from './pages/users/users.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
-import { AppRouting } from './app.routing'
+import { AppRouting } from './app.routing';
+import { ComponentsModule } from './components/components.module';
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { AppRouting } from './app.routing'
         BrowserModule,
         FormsModule,
         HttpModule,
-        AppRouting
+        AppRouting,
+        ComponentsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

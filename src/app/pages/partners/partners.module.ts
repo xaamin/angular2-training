@@ -4,8 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ListComponent } from './list/list.component'
-import { RegistrationComponent } from './registration/registration.component'
+import { ListComponent } from './list/list.component';
+import { RegistrationComponent } from './registration/registration.component';
+
+import { ComponentsModule } from '../../components/components.module'
 
 import { PartnersRouting } from './partners.routing'
 import { PartnersService } from '../../services/partners.service'
@@ -19,7 +21,8 @@ import { PartnersService } from '../../services/partners.service'
         FormsModule,
         HttpModule,
         CommonModule,
-        PartnersRouting
+        PartnersRouting,
+        ComponentsModule
     ],
     providers: [
         PartnersService

@@ -16,7 +16,7 @@ const appRoutes: Routes = [
     },
     {
         path: 'partners',
-        loadChildren: './components/partners/partners.module#PartnersModule',
+        loadChildren: './pages/partners/partners.module#PartnersModule',
     },
     {
         path: '',

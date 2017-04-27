@@ -1,0 +1,12 @@
+<h1>List partners</h1>
+
+<partner-list [partners]='partners' (edit)="edit($event)"></partner-list>
+
+<hr>
+
+<form class="" action="index.html" method="post">
+    <input type="text" name="uuid" value="" placeholder="uuid" [(ngModel)]="partner.uuid">
+    <input type="text" name="name" value="" placeholder="name" [(ngModel)]="partner.name">
+    <input type="text" name="status" value="" placeholder="status" [(ngModel)]="partner.status">
+    <button type="button" name="button" (click)="register(partner)">Registrar</button>
+</form>

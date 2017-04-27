@@ -44,4 +44,8 @@ export class ListComponent implements OnInit {
         })
     }
 
+    public edit(partner: any) {
+        console.log('Listener for edit', partner)
+    }
+
 }
